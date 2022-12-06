@@ -1,0 +1,212 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ KLEUREN PALETTE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Nadeshiko Pink                          #EDADC7
+De pink in het donker                   #831d46
+bijpassende groen                       #1D8359             
+                    GEIMPORTEERDE FONTS
+font-family: 'Codystar', cursive;
+font-family: 'Kenia', cursive;
+font-family: 'Zen Dots', cursive;
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*                  UNIVERSELE OPMAAK           */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/*              Header & nav                    */
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;   
+}
+header{
+    width:100%;
+    color: white;
+    font-weight: 900;
+    letter-spacing: 1px;
+    background: #EDADC7;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Codystar', cursive;
+}
+header > div {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+header > div > img{
+    width: 64px;
+}
+header > div > button{
+    padding: 5px 5px;
+    height: 100%;
+}
+header > nav{
+    font-family: 'Codystar', cursive;
+    background: #EDADC7;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+header > nav > ul{
+    display: flex;
+    flex-direction: column;
+}
+header > nav > ul > li {
+    padding: 0 5px;
+    list-style-type: none;
+    text-align: center;
+}
+header > nav > ul > li > a{
+    color: white;
+    text-decoration: none;
+}
+.active-tab{
+    color:#1D8359;
+}
+main{
+    font-family: 'Zen Dots', cursive;
+    padding: 10px 0px;
+}
+h1,h2,h3,h4{
+    padding: 10px 0px;
+    color:#1D8359;
+}
+p,span,label{
+    padding: 10px 0px;
+    font-size: 10px;
+}
+button{
+    background: #1D8359;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 900;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+button > a{
+    color:white;
+    text-decoration: none;
+}
+.list{
+    font-size: 10px;
+}
+.fat-txt{
+    font-weight: 700;
+}
+.link-txt{
+    color: #831d46;
+    text-decoration: none;
+}
+footer{
+    width: 100%;
+    min-height: 100%;
+    background: #EDADC7;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+footer > section > p,span{
+    font-size: 15px;
+}
+/*              linker box              */
+main > .linker-deel{
+    padding: 0px 20px;
+}
+/*              rechter box             */
+main > .rechter-deel{
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.img-right-box{
+    width: 70%;
+    border-radius: 5px;
+}
+/*      Ervaringen pagina           */
+.testimonial{
+    border-left: 2px solid rgba(70, 67, 67,0.3);
+    font-style: italic;
+    padding: 10px 10px;
+}
+
+/*      Contact pagina               */
+.contact-formulier{
+    padding: 20px 20px;   
+    border: 5px solid rgba(237, 173, 199,1);
+    background: rgba(237, 173, 199,0.5);
+    border-radius: 5px;
+}
+.contact-formulier > input[type='text'],input[type='email'],input[type='tel'],label,textarea{
+ width: 100%;
+}
+.contact-formulier > textarea{
+    height: 10rem;
+}
+/*      Product Page                   */
+.product-page{
+    display: flex;
+    justify-content: center;
+}
+/*~~~~~~~~~~~~~~~~~~ MEDIA QUERIES ~~~~~~~~~~~~~~~~~~*/
+            /* ipads */
+@media only screen and (min-width: 768px) {
+    header > nav > ul{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header > div > button {
+        padding: 10px 10px;
+    }
+    main{
+        display: flex;
+        flex-direction: row;
+    }
+    .linker-deel{
+        width: 60%;
+    }
+    .rechter-deel{
+        width: 40%;
+    }
+    footer{
+        padding: 0px 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+            /* pc */
+@media only screen and (min-width: 1024px) {
+    main{
+        padding: 0 10%;
+    }
+    .linker-deel{
+        padding: 5%;
+    }
+    .rechter-deel{
+        padding: 5%;
+    }
+    p, li, span{
+        font-size: 15px;
+    }
+    .over-mij > section{
+        padding: 20px 0px;
+    }
+}
+            /* grote pc */
+@media only screen and (min-width: 1280px) {
+    main{
+        padding: 0 10%;
+    }
+}
